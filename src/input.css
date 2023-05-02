@@ -32,3 +32,14 @@
 .slide {
   transform: translateY(0);
 }
+button:focus-visible {
+  box-shadow: none;
+}
+button:focus,
+a:focus {
+  outline: none;
+  box-shadow: 0 0 16px rgba(247, 75, 13, 0.792);
+}
+.submit:focus {
+  box-shadow: none;
+}

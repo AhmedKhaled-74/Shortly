@@ -128,20 +128,28 @@
       </div>
     </section>
     <section id="tool" class="bg-gray-100 px-6 pb-16 flex gap-6 flex-col">
-      <div
+      <form
+        id="link-form"
         class="bg-darkViolet -translate-y-[45%] container mx-auto p-10 lg:max-w-4xl md:max-w-[52rem] rounded-xl flex flex-col gap-3 md:flex-row"
       >
         <input
-          type="url"
-          class="bg-white focus:outline-none px-4 py-3 rounded-xl w-full placeholder:text-amber-500 placeholder:font-normal placeholder:text-base text-black"
+          id="link-input"
+          type="text"
+          class="bg-white focus:outline-none px-4 py-3 rounded-xl w-full border-2 placeholder:text-amber-500 placeholder:font-normal placeholder:text-base text-black"
           placeholder="Shorten a link here"
         />
         <button
+          id="submit-btn"
+          type="submit"
           class="px-4 py-3 inline font-medium transition-all text-lg text-center md:w-56 duration-200 text-white bg-cyan rounded-xl hover:bg-[#24dfe1]"
         >
           Shorten it!
         </button>
-      </div>
+        <div
+          id="err-msg"
+          class="absolute left-10 bottom-3 tracking-widest font-medium text-red text-sm italic"
+        ></div>
+      </form>
       <div
         class="bg-white -translate-y-[45%] container mx-auto p-4 lg:max-w-4xl md:max-w-[52rem] md:text-left text-center rounded-xl flex flex-col gap-1 items-center md:justify-between md:flex-row"
       >
