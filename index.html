@@ -18,10 +18,8 @@
   </head>
   <body>
     <header class="md:px-0 px-6">
-      <nav id="nav" class="container mx-auto p-8 lg:p-6">
-        <div
-          class="flex lg:items-center relative z-10 items-start justify-between"
-        >
+      <nav id="nav" class="container relative z-20 mx-auto p-8 lg:p-6">
+        <div class="flex lg:items-center items-start justify-between">
           <div class="flex items-center space-x-20">
             <img src="./img/logo.svg" alt="Shortly logo" />
             <div class="hidden lg:flex space-x-8 font-bold">
@@ -80,25 +78,29 @@
             </div>
           </button>
           <!-- todo mobil-menu -->
-          <div
-            id="menu"
-            class="out text-white transition-all duration-500 ease-in-out absolute w-full mx-auto top-24 left-0 text-center font-bold bg-darkViolet flex flex-col gap-6 rounded-xl p-6"
-          >
-            <a href="#" class="capitalize">Features</a>
-            <a href="#" class="capitalize">pricing</a>
-            <a href="#" class="capitalize">Resources</a>
-            <div class="border-[.5px] border-gray-500"></div>
-            <a href="#" class="capitalize">login</a>
-            <a
-              href="#"
-              class="capitalize hover:bg-cyanLight transition-all duration-300 bg-cyan p-3 rounded-full"
-              >sign up</a
-            >
-          </div>
         </div>
       </nav>
     </header>
-    <section id="hero">
+    <section id="hero" class="relative overflow-hidden">
+      <div
+        id="menu"
+        class="w-full lg:hidden absolute mx-auto out transition-all duration-500 ease-in-out md:px-24 px-8 pt-2"
+      >
+        <div
+          class="text-white top-0 left-0 text-center font-bold bg-darkViolet flex flex-col gap-6 rounded-xl p-6"
+        >
+          <a href="#" class="capitalize">Features</a>
+          <a href="#" class="capitalize">pricing</a>
+          <a href="#" class="capitalize">Resources</a>
+          <div class="border-[.5px] border-gray-500"></div>
+          <a href="#" class="capitalize">login</a>
+          <a
+            href="#"
+            class="capitalize hover:bg-cyanLight transition-all duration-300 bg-cyan p-3 rounded-full"
+            >sign up</a
+          >
+        </div>
+      </div>
       <div
         class="container pb-36 mt-4 mb-20 mx-auto p-6 grid grid-cols-1 gap-y-20 lg:gap-y-0 lg:gap-x-20 xl:gap-x-32 lg:grid-cols-10 xl:grid-cols-7"
       >
