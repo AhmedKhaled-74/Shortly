@@ -40,6 +40,6 @@ a:focus {
   outline: none;
   box-shadow: 0 0 16px rgba(247, 75, 13, 0.792);
 }
-.submit:focus {
+.submit {
   box-shadow: none;
 }
